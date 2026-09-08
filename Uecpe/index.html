@@ -7,21 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>UE Computer Engineering</title>
-
-   
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
-
-    
     <link
-        rel="stylesheet"
+        rel="stylesheet"  
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -42,7 +36,7 @@
 
                 <!-- UE LOGO -->
                 <div class="ue-logo" role="img" aria-label="University of the East Manila">
-                    <span class="logo-frame" aria-hidden="true"></span>
+                    <img src="assets/ue logo.png" alt="University of the East Manila" class="logo-frame">
                     <span class="ue-logo-name">UNIVERSITY<br>OF THE EAST</span>
                 </div>
 
@@ -50,8 +44,7 @@
                 <div class="navbar-divider"></div>
 
                 <!-- CPE LOGO -->
-                <span class="logo-frame cpe-logo" role="img" aria-label="Computer Engineering logo placeholder"></span>
-                <img src =assets/cpe-logo.jpg alt="Computer Engineering logo" class="cpe-logo">
+                <img src="assets/cpe-logo.jpg" alt="Computer Engineering logo" class="logo-frame cpe-logo">
 
                 <div class="cpe-brand-text">
                     <strong>COMPUTER</strong>
@@ -95,7 +88,7 @@
 
             <div class="offcanvas-brand">
 
-                <div class="offcanvas-cpe-logo" role="img" aria-label="Computer Engineering logo placeholder"></div>
+                <img src="assets/cpe-logo.jpg" alt="Computer Engineering logo" class="offcanvas-cpe-logo">
 
                 <div>
                     <span>UE MANILA</span>
@@ -203,46 +196,57 @@
             <div class="container hero-container">
 
 
-                <!-- SMALL TEXT BOX -->
-                <div class="hero-label">
-                    UNIVERSITY OF THE EAST • MANILA
-                </div>
-
-
                 <!-- MAIN WHITE BOX -->
                 <div class="hero-content">
 
-                    <h1>
-                        WHAT IS
-                        <span>COMPUTER ENGINEERING?</span>
-                    </h1>
+                    <div class="hero-slides" aria-live="polite">
 
+                        <article class="hero-slide active" data-slide="0">
+                            <span class="slide-kicker">COMPUTER ENGINEERING</span>
+                            <h1>
+                                Engineering ideas into
+                                <span>intelligent technology.</span>
+                            </h1>
+                            <p class="hero-description">
+                                Computer Engineering integrates hardware, software,
+                                electronics, and programming to create reliable
+                                computer systems and innovative solutions for the
+                                way people live, work, and connect.
+                            </p>
+                        </article>
 
-                    <div class="title-line"></div>
+                        <article class="hero-slide" data-slide="1">
+                            <span class="slide-kicker">UNIVERSITY OF THE EAST - MANILA</span>
+                            <h1>
+                                Computer Engineering
+                                <span>at UE.</span>
+                            </h1>
+                            <p class="hero-description">
+                                UE offers Computer Engineering students a strong
+                                foundation in computing, electronics, embedded systems,
+                                networking, and design, preparing them to build the
+                                technologies of tomorrow.
+                            </p>
+                        </article>
 
-
-                    <p class="hero-description">
-
-                        Computer Engineering combines the principles of
-                        hardware and software to design, develop, and improve
-                        modern computer systems and intelligent technologies.
-
-                        At the University of the East – Manila, Computer
-                        Engineering students develop knowledge and practical
-                        skills in computer hardware, programming, networking,
-                        embedded systems, electronics, and emerging
-                        technologies.
-
-                    </p>
-
+                    </div>
 
                     <a href="about.html" class="learn-more-button">
-
                         LEARN MORE
-
                         <i class="bi bi-arrow-right"></i>
-
                     </a>
+
+                    <div class="hero-controls" aria-label="Hero slide controls">
+                        <button class="hero-control" type="button" data-slide-action="previous" aria-label="Previous slide">
+                            <i class="bi bi-arrow-left"></i>
+                            <span>PREVIOUS</span>
+                        </button>
+                        <span class="hero-slide-status"><strong>01</strong> / 02</span>
+                        <button class="hero-control" type="button" data-slide-action="next" aria-label="Next slide">
+                            <span>NEXT</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
 
                 </div>
 
@@ -277,7 +281,7 @@
 
                     <!-- UE FACEBOOK -->
                     <a
-                        href="#"
+                        href="https://web.facebook.com/UniversityoftheEastUE"
                         target="_blank"
                         class="social-link">
 
@@ -292,7 +296,7 @@
 
                     <!-- SCPES FACEBOOK -->
                     <a
-                        href="#"
+                        href="https://web.facebook.com/uescpes"
                         target="_blank"
                         class="social-link">
 
@@ -305,7 +309,7 @@
 
                     <!-- SCPES INSTAGRAM -->
                     <a
-                        href="#"
+                        href="https://www.instagram.com/uescpes"
                         target="_blank"
                         class="social-link">
 
@@ -360,8 +364,7 @@
                     <div class="col-lg-6 footer-school">
 
                         <div class="footer-ue-logo" role="img" aria-label="University of the East Manila">
-                            <span class="logo-frame" aria-hidden="true"></span>
-                            <span class="ue-logo-name">UNIVERSITY<br>OF THE EAST</span>
+                            <img src="assets/ue logo.png" alt="University of the East Manila" class="logo-frame">
                         </div>
 
 
@@ -393,7 +396,7 @@
                         <div class="footer-divider"></div>
 
 
-                        <div class="footer-cpe-logo" role="img" aria-label="Computer Engineering logo placeholder"></div>
+                        <img src="assets/cpe-logo.jpg" alt="Computer Engineering logo" class="footer-cpe-logo">
 
 
                         <div class="cpe-footer-name">
@@ -441,6 +444,28 @@
     <!-- Bootstrap JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script>
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const previousButton = document.querySelector('[data-slide-action="previous"]');
+        const nextButton = document.querySelector('[data-slide-action="next"]');
+        const slideNumber = document.querySelector('.hero-slide-status strong');
+        let currentSlide = 0;
+
+        function showSlide(slideIndex) {
+            currentSlide = (slideIndex + heroSlides.length) % heroSlides.length;
+
+            heroSlides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+
+            slideNumber.textContent = String(currentSlide + 1).padStart(2, '0');
+        }
+
+        previousButton.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
+        setInterval(() => showSlide(currentSlide + 1), 4000);
     </script>
 
 
