@@ -339,6 +339,151 @@ body {
     margin-bottom: 2px;
 }
 
+.faq-menu {
+    margin-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    padding-top: 18px;
+}
+
+.faq-menu-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 5px;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, .9);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.faq-menu-toggle span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-menu-toggle > i {
+    transition: transform .25s ease;
+}
+
+.faq-menu-toggle[aria-expanded="true"] > i {
+    transform: rotate(180deg);
+}
+
+.faq-menu details {
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.faq-menu summary {
+    padding: 12px 5px;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.45;
+    list-style: none;
+}
+
+.faq-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-menu summary::after {
+    float: right;
+    content: "+";
+    color: rgba(255, 255, 255, .45);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.faq-menu details[open] summary::after {
+    content: "-";
+}
+
+.faq-menu details p {
+    margin: 0;
+    padding: 0 5px 12px 22px;
+    color: rgba(255, 255, 255, .62);
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+.page-next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 10px 0;
+}
+
+.page-next-primary,
+.page-next-previous {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: gap .25s ease, color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.page-next-primary {
+    max-width: calc(100% - 30px);
+    padding: 14px 25px;
+    border-radius: 3px;
+    background: var(--cpe-blue);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+
+.page-next-primary:hover {
+    gap: 17px;
+    background: var(--cpe-dark-blue);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.page-next-previous {
+    min-width: 220px;
+    padding: 12px 22px;
+    border: 1px solid #d6e2e8;
+    border-radius: 3px;
+    background: #fff;
+    color: var(--cpe-blue);
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.page-next-previous:hover {
+    gap: 17px;
+    border-color: #a9c4d2;
+    background: #f7fafc;
+    color: var(--cpe-dark-blue);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .page-next {
+        margin-bottom: 55px;
+    }
+
+    .page-next-primary {
+        max-width: calc(100% - 20px);
+        font-size: 11px;
+    }
+}
+
 
 
 /* ================================ */
@@ -730,29 +875,36 @@ body {
     padding-right: 50px;
 }
 
+@media (min-width: 992px) {
+    .footer-school {
+        transform: translateY(32px);
+    }
+}
+
 
 .footer-ue-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     width: 100%;
-    height: auto;
+    min-height: 64px;
     margin: 0 0 20px;
 }
 
 .footer-ue-logo .ue-logo-image {
-    width: 58px;
-    height: 58px;
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
 }
 
-
-.school-information h6 {
-    color: var(--cpe-blue);
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 5px;
+.footer-ue-logo .ue-logo-name {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+    white-space: nowrap;
 }
-
 
 .school-information p {
     font-size: 12px;
@@ -786,7 +938,7 @@ body {
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
     padding-left: 60px;
 }
@@ -806,8 +958,9 @@ body {
 
 
 .footer-cpe-logo {
-    width: 85px;
-    height: 85px;
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
     margin-right: 22px;
     object-fit: cover;
     border-radius: 14px;
@@ -818,6 +971,8 @@ body {
 .cpe-footer-name {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-height: 64px;
 
     color: var(--cpe-blue);
 
@@ -831,8 +986,9 @@ body {
 
 
 .cpe-footer-name strong {
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2.50;
 }
 
 
@@ -889,6 +1045,7 @@ body {
 
     .footer-school {
         justify-content: center;
+        transform: none;
 
         padding-right: 15px;
 
@@ -1091,6 +1248,10 @@ body {
 .cpe-ue-page {
     background: #f5f8fb;
     color: #17202a;
+}
+
+.cpe-ue-page .page-hero {
+    background-image: linear-gradient(135deg, rgba(0, 63, 117, 0.82), rgba(10, 58, 94, 0.74)), url('assets/UE-campus.jpg');
 }
 
 .page-hero {
@@ -1638,7 +1799,7 @@ body {
 
 .specialization-hero {
     isolation: isolate;
-    background: #123d5d;
+    background: #123d5d url('assets/UE-campus.jpg') center / cover no-repeat;
 }
 
 .specialization-slide {
@@ -1740,9 +1901,6 @@ body {
 .specialization-image i {
     position: absolute;
     z-index: 1;
-}
-
-    text-transform: uppercase;
 }
 
 .specialization-content {
