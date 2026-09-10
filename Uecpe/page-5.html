@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Career Opportunities | UE Computer Engineering</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg cpe-navbar">
+		<div class="container">
+			<div class="navbar-brand d-flex align-items-center">
+				<a class="navbar-ue-link" href="https://www.ue.edu.ph/mla/" aria-label="Visit University of the East Manila"><div class="ue-logo" role="img" aria-label="University of the East Manila"><img src="assets/UE_logo.png" alt="University of the East logo" class="ue-logo-image"><span class="ue-logo-name">UNIVERSITY<br>OF THE EAST</span></div></a>
+				<div class="navbar-divider"></div>
+				<a class="navbar-cpe-link" href="index.html" aria-label="Go to Computer Engineering home"><img src="assets/cpe-logo.jpg" alt="Computer Engineering logo" class="cpe-logo"><div class="cpe-brand-text"><strong>COMPUTER</strong><span>ENGINEERING</span></div></a>
+			</div>
+			<div class="nav-context" aria-label="Academic program"><span>UE MANILA</span><strong>B.S. COMPUTER ENGINEERING</strong></div>
+			<button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cpeMenu" aria-controls="cpeMenu"><i class="bi bi-list"></i></button>
+		</div>
+	</nav>
+
+	<div class="offcanvas offcanvas-end cpe-offcanvas" tabindex="-1" id="cpeMenu" aria-labelledby="cpeMenuLabel">
+		<div class="offcanvas-header">
+			<div class="offcanvas-brand"><img src="assets/cpe-logo.jpg" alt="Computer Engineering logo"><div><span>UE MANILA</span><strong>COMPUTER ENGINEERING</strong></div></div>
+			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<nav class="side-navigation">
+				<a href="index.html"><span>01</span>Home</a>
+				<a href="page-2.html"><span>02</span>About CPE</a>
+				<a href="page-3.html"><span>03</span>CPE at UE</a>
+				<a href="page-4.html"><span>04</span>Specializations</a>
+				<a href="page-5.html" class="active"><span>05</span>Careers</a>
+				<a href="faculty.html"><span>06</span>Faculty</a>
+				<a href="scpes.html"><span>07</span>SCPES</a>
+				<a href="projects.html"><span>08</span>Projects</a>
+				<a href="contact.html"><span>09</span>Contact</a>
+			</nav>
+			<div class="menu-footer"><p>University of the East - Manila</p><span>Computer Engineering</span></div>
+		</div>
+	</div>
+
+	<main class="careers-page">
+		<section class="page-hero careers-hero">
+			<div class="container">
+				<p class="eyebrow">Where computer engineering can lead</p>
+				<h1>Build a career around technology that matters.</h1>
+				<p>Computer Engineering graduates move between code, circuits, data, infrastructure, and research. Each path connects technical skill with meaningful work.</p>
+				<a class="careers-hero-link" href="#career-directory">Browse career paths <i class="bi bi-arrow-down"></i></a>
+			</div>
+		</section>
+
+		<section class="career-feature section-shell">
+			<div class="container">
+				<div class="career-feature-panel">
+					<div class="career-feature-image"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Engineering team collaborating around a computer"></div>
+					<div class="career-feature-copy">
+						<p class="specialization-kicker">A degree with range</p>
+						<h2>From first prototype to real-world system.</h2>
+						<p>Computer engineers can work close to the hardware, deep in software, or at the intersection of both. The same foundation can open doors in product teams, operations, security, research, and technical leadership.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="career-directory section-shell" id="career-directory" aria-labelledby="career-directory-title">
+			<div class="container">
+				<div class="section-header career-directory-heading">
+					<p class="specialization-kicker">Career pathways</p>
+					<h2 id="career-directory-title">Career Opportunities</h2>
+				</div>
+				<div class="career-filters" role="group" aria-label="Filter careers">
+					<span class="career-filter-icon" aria-hidden="true"><i class="bi bi-funnel"></i></span>
+					<button class="career-filter active" type="button" data-career-filter="all">All roles</button>
+					<button class="career-filter" type="button" data-career-filter="build">Build &amp; design</button>
+					<button class="career-filter" type="button" data-career-filter="systems">Systems &amp; infrastructure</button>
+					<button class="career-filter" type="button" data-career-filter="data">Data &amp; intelligence</button>
+					<button class="career-filter" type="button" data-career-filter="support">Security &amp; support</button>
+				</div>
+
+				<div class="row g-4 career-grid">
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="build"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Circuit board for a computer engineering role"><i class="bi bi-cpu"></i></div><div class="career-card-content"><span class="career-tag">Build &amp; design</span><h3>Computer Engineer</h3><p>Integrates hardware and software to design, test, and improve complete computing systems.</p><strong class="career-focus">Systems integration and product development</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="build"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1555664424-778a690e9b96?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Embedded electronics and microcontroller board"><i class="bi bi-motherboard"></i></div><div class="career-card-content"><span class="career-tag">Build &amp; design</span><h3>Embedded Systems Engineer</h3><p>Writes firmware and connects sensors, processors, and electronics inside smart products.</p><strong class="career-focus">Firmware and device development</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="systems"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Connected device technology for an IoT role"><i class="bi bi-broadcast-pin"></i></div><div class="career-card-content"><span class="career-tag">Systems &amp; infrastructure</span><h3>IoT Engineer</h3><p>Creates connected devices and services that gather data and respond to the physical world.</p><strong class="career-focus">Connected products and smart environments</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="build"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Programming code for a software engineering role"><i class="bi bi-code-slash"></i></div><div class="career-card-content"><span class="career-tag">Build &amp; design</span><h3>Software Engineer</h3><p>Develops applications and services, then tests and maintains them as users and needs grow.</p><strong class="career-focus">Application and platform development</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="build"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Computer hardware components and tools"><i class="bi bi-tools"></i></div><div class="career-card-content"><span class="career-tag">Build &amp; design</span><h3>Hardware Engineer</h3><p>Designs and validates circuit boards, processors, and electronic components for reliable products.</p><strong class="career-focus">Electronics and computer architecture</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="systems"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Digital network connections for a network engineering role"><i class="bi bi-diagram-3"></i></div><div class="career-card-content"><span class="career-tag">Systems &amp; infrastructure</span><h3>Network Engineer</h3><p>Plans, configures, and monitors the networks that keep organizations and devices connected.</p><strong class="career-focus">Connectivity and network performance</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="systems"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Server infrastructure for a systems engineering role"><i class="bi bi-server"></i></div><div class="career-card-content"><span class="career-tag">Systems &amp; infrastructure</span><h3>Systems Engineer</h3><p>Coordinates hardware, software, and processes so complex technology environments work together.</p><strong class="career-focus">Architecture and system reliability</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="support"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Digital security lock for a cybersecurity role"><i class="bi bi-shield-lock"></i></div><div class="career-card-content"><span class="career-tag">Security &amp; support</span><h3>Cybersecurity Engineer</h3><p>Builds defenses, investigates threats, and strengthens systems against attacks and data loss.</p><strong class="career-focus">Risk management and security operations</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="data"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Data dashboard for a data engineering role"><i class="bi bi-database"></i></div><div class="career-card-content"><span class="career-tag">Data &amp; intelligence</span><h3>Data Engineer</h3><p>Builds pipelines and storage systems that make trustworthy data available for analysis and decisions.</p><strong class="career-focus">Data platforms and information flow</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="data"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Artificial intelligence technology for a machine learning role"><i class="bi bi-stars"></i></div><div class="career-card-content"><span class="career-tag">Data &amp; intelligence</span><h3>AI / Machine Learning Engineer</h3><p>Trains, evaluates, and deploys models that recognize patterns and support smarter decisions.</p><strong class="career-focus">Predictive systems and intelligent applications</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="systems"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Cloud infrastructure connections for a cloud engineering role"><i class="bi bi-cloud-arrow-up"></i></div><div class="career-card-content"><span class="career-tag">Systems &amp; infrastructure</span><h3>Cloud Engineer</h3><p>Designs and manages scalable cloud environments, services, access, and deployment resources.</p><strong class="career-focus">Cloud platforms and distributed systems</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="systems"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Technology infrastructure for a DevOps role"><i class="bi bi-arrow-repeat"></i></div><div class="career-card-content"><span class="career-tag">Systems &amp; infrastructure</span><h3>DevOps Engineer</h3><p>Automates build, testing, and release workflows so teams can deliver software reliably.</p><strong class="career-focus">Automation and delivery pipelines</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="build"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Robot for a robotics engineering role"><i class="bi bi-robot"></i></div><div class="career-card-content"><span class="career-tag">Build &amp; design</span><h3>Robotics Engineer</h3><p>Combines mechanics, electronics, and code to create machines that sense, move, and act.</p><strong class="career-focus">Automation and autonomous machines</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="support"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Technical team collaborating on a support solution"><i class="bi bi-headset"></i></div><div class="career-card-content"><span class="career-tag">Security &amp; support</span><h3>Technical Support Engineer</h3><p>Diagnoses technical issues, guides users, and turns recurring problems into better systems.</p><strong class="career-focus">Troubleshooting and user enablement</strong></div></article></div>
+					<div class="col-md-6 col-xl-4 career-item" data-career-group="data"><article class="career-card"><div class="career-image"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Research team collaborating on a technology project"><i class="bi bi-lightbulb"></i></div><div class="career-card-content"><span class="career-tag">Data &amp; intelligence</span><h3>Research and Development Engineer</h3><p>Explores new ideas, prototypes solutions, and tests technologies before they become products.</p><strong class="career-focus">Innovation and applied research</strong></div></article></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="cpe-footer"><div class="copyright"><div class="container"><p>© 2026 University of the East - Manila | Computer Engineering</p></div></div></footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		const careerFilters = document.querySelectorAll('[data-career-filter]');
+		const careerItems = document.querySelectorAll('.career-item');
+
+		careerFilters.forEach((filter) => {
+			filter.addEventListener('click', () => {
+				const selectedGroup = filter.dataset.careerFilter;
+
+				careerFilters.forEach((button) => button.classList.toggle('active', button === filter));
+				careerItems.forEach((item) => {
+					const isVisible = selectedGroup === 'all' || item.dataset.careerGroup === selectedGroup;
+					item.hidden = !isVisible;
+				});
+			});
+		});
+	</script>
+</body>
+</html>
