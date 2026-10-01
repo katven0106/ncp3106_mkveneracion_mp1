@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedName.textContent = member.name;
                 profileName.textContent = member.name;
                 profilePosition.textContent = member.position;
-                profileStatus.textContent = member.name === 'Engr. Joshua Fajardo' ? 'Inactive' : 'Active';
+                profileStatus.textContent = 'Active';
                 profileRecord.textContent = record;
                 carousel.querySelector('[data-faculty-index]').textContent = `RECORD ${String(index + 1).padStart(2, '0')} / ${String(faculty.length).padStart(2, '0')}`;
                 portrait.alt = member.imageAlt;
