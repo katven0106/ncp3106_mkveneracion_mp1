@@ -4730,6 +4730,79 @@ html[data-theme='dark'] .scpes-status-dot {
     }
 }
 
+.footer-developers {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(244, 245, 246, 0.14);
+    text-align: center;
+}
+
+.footer-developers h5 {
+    margin: 0 0 16px;
+    color: #e5e7e9;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.footer-developer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 180px));
+    justify-content: center;
+    gap: 22px;
+}
+
+.footer-developer-button {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: 1px solid rgba(244, 245, 246, 0.4);
+    border-radius: 2px;
+    background: transparent;
+    color: #f4f5f6;
+    text-decoration: none;
+    font: 500 10px/1.4 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+    animation: footerDeveloperGlitch 1.15s steps(1, end) infinite;
+}
+
+.footer-developer-button:hover,
+.footer-developer-button:focus-visible {
+    border-color: #63b3ed;
+    background: rgba(99, 179, 237, 0.08);
+    outline: none;
+}
+
+.footer-developer-button:focus-visible {
+    box-shadow: 0 0 0 2px rgba(99, 179, 237, 0.4);
+}
+
+@keyframes footerDeveloperGlitch {
+    0% { transform: translateX(2px); text-shadow: 2px 0 rgba(210, 48, 60, 0.68), -2px 0 rgba(21, 90, 162, 0.75); }
+    4% { transform: translateX(-2px); text-shadow: -2px 0 rgba(210, 48, 60, 0.55), 2px 0 rgba(21, 90, 162, 0.65); }
+    8% { transform: translateX(1px); }
+    12%, 100% { transform: none; text-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-developer-button {
+        animation: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-developer-buttons {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .scpes-hologram *,
     .scpes-person-frame img,
@@ -7420,9 +7493,33 @@ html[data-theme='dark'] .hero-slide-status strong {
     font: 400 0.66rem/1.5 'Inter', sans-serif;
 }
 
-.school-information {
-    width: calc(100% - 80px);
-    margin-left: 80px;
+.footer-ue-logo {
+    margin-bottom: 0;
+}
+
+.footer-school-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.footer-school-copy .school-information {
+    width: auto;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-school-copy .school-information p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer-school .footer-ue-logo {
+        justify-content: center;
+        margin-bottom: 0;
+    }
 }
 
 .copyright {
