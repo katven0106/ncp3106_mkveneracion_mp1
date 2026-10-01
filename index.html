@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,14 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="entry-pending">
 
     <!-- ========================= -->
     <!-- NAVBAR -->
@@ -127,32 +127,32 @@
                     Home
                 </a>
 
-                <a href="page-2.html">
+                <a href="about-cpe.html">
                     <span>02</span>
                     About CPE
                 </a>
 
-                <a href="page-3.html">
+                <a href="cpe-ue.html">
                     <span>03</span>
                     CPE at UE
                 </a>
 
-                <a href="page-4.html">
+                <a href="specializations.html">
                     <span>04</span>
                     Specializations
                 </a>
 
-                <a href="page-5.html">
+                <a href="careers.html">
                     <span>05</span>
                     Careers
                 </a>
 
-                <a href="page-6.html">
+                <a href="faculty.html">
                     <span>06</span>
                     Faculty
                 </a>
 
-                <a href="page-7.html">
+                <a href="scpes.html">
                     <span>07</span>
                     SCPES
                 </a>
@@ -293,38 +293,11 @@
 
         <section class="hero-section">
 
-            <!-- Decorative shapes -->
-            <div class="hero-circle circle-one"></div>
-            <div class="hero-circle circle-two"></div>
-
-
             <div class="container hero-container">
 
                 <!-- MAIN WHITE BOX -->
                 <div class="hero-content">
 
-                    <!-- VIDEO BACKGROUND -->
-                    <video
-                        class="hero-background-video"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        preload="auto"
-                        poster="assets/UE-campus.jpg">
-
-                        <source src="assets/vid.mp4" type="video/mp4">
-
-                        Your browser does not support the video tag.
-
-                    </video>
-
-
-                    <!-- VIDEO OVERLAY -->
-                    <div class="hero-video-overlay"></div>
-
-
-                    <!-- CONTENT ON TOP OF VIDEO -->
                     <div class="hero-slides" aria-live="polite">
 
                         <article class="hero-slide active" data-slide="0">
@@ -373,7 +346,7 @@
 
                     <!-- LEARN MORE BUTTON -->
                     <a
-                        href="page-2.html"
+                        href="about-cpe.html"
                         class="learn-more-button">
 
                         LEARN MORE
@@ -382,8 +355,6 @@
 
                     </a>
 
-
-                    <!-- HERO CONTROLS -->
                     <div
                         class="hero-controls"
                         aria-label="Hero slide controls">
@@ -427,6 +398,78 @@
         </section>
 
     </main>
+
+    <section class="system-faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="specialization-kicker">System knowledge base</p>
+                <h2>Frequently asked questions</h2>
+            </div>
+
+            <div class="accordion" id="cpeFaqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-one">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one-collapse" aria-expanded="true" aria-controls="faq-one-collapse">
+                            What is the difference between Computer Engineering and Computer Science?
+                        </button>
+                    </h2>
+                    <div id="faq-one-collapse" class="accordion-collapse collapse show" aria-labelledby="faq-one" data-bs-parent="#cpeFaqAccordion">
+                        <div class="accordion-body">
+                            Computer Engineering focuses on the design, building, and integration of hardware and software systems. Computer Science often emphasizes software theory, algorithms, and computing models.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-two">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two-collapse" aria-expanded="false" aria-controls="faq-two-collapse">
+                            Is Computer Engineering mostly hardware?
+                        </button>
+                    </h2>
+                    <div id="faq-two-collapse" class="accordion-collapse collapse" aria-labelledby="faq-two" data-bs-parent="#cpeFaqAccordion">
+                        <div class="accordion-body">
+                            It is a blend of both. Students work with electronic systems, processors, circuits, and also develop software that controls or supports those systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-three">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three-collapse" aria-expanded="false" aria-controls="faq-three-collapse">
+                            Do Computer Engineering students learn programming?
+                        </button>
+                    </h2>
+                    <div id="faq-three-collapse" class="accordion-collapse collapse" aria-labelledby="faq-three" data-bs-parent="#cpeFaqAccordion">
+                        <div class="accordion-body">
+                            Yes. Programming is an essential part of the program and helps students design software, automate processes, and interface with embedded and computing systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-four">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-four-collapse" aria-expanded="false" aria-controls="faq-four-collapse">
+                            What programming languages are commonly used?
+                        </button>
+                    </h2>
+                    <div id="faq-four-collapse" class="accordion-collapse collapse" aria-labelledby="faq-four" data-bs-parent="#cpeFaqAccordion">
+                        <div class="accordion-body">
+                            Common languages include Python, C, C++, Java, JavaScript, and assembly-related languages depending on the course, project, or specialization area.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-five">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-five-collapse" aria-expanded="false" aria-controls="faq-five-collapse">
+                            What careers can Computer Engineering graduates pursue?
+                        </button>
+                    </h2>
+                    <div id="faq-five-collapse" class="accordion-collapse collapse" aria-labelledby="faq-five" data-bs-parent="#cpeFaqAccordion">
+                        <div class="accordion-body">
+                            Graduates may work in embedded systems, software, network engineering, cybersecurity, data platforms, robotics, cloud systems, and research and development.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ========================= -->
@@ -644,6 +687,11 @@
 
         function showSlide(slideIndex) {
 
+            const slidesContainer = document.querySelector('.hero-slides');
+            slidesContainer.classList.add('is-switching');
+
+            window.setTimeout(() => {
+
             currentSlide =
                 (slideIndex + heroSlides.length) % heroSlides.length;
 
@@ -658,6 +706,9 @@
 
             slideNumber.textContent =
                 String(currentSlide + 1).padStart(2, '0');
+
+                slidesContainer.classList.remove('is-switching');
+            }, 260);
 
         }
 
@@ -674,13 +725,25 @@
         );
 
 
-        setInterval(
-            () => showSlide(currentSlide + 1),
-            4000
-        );
+        let touchStartX = 0;
+        const hero = document.querySelector('.hero-section');
+
+        hero?.addEventListener('touchstart', (event) => {
+            touchStartX = event.changedTouches[0].clientX;
+        }, { passive: true });
+
+        hero?.addEventListener('touchend', (event) => {
+            const touchDelta = event.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(touchDelta) > 55) {
+                showSlide(currentSlide + (touchDelta < 0 ? 1 : -1));
+            }
+        }, { passive: true });
+
+        setInterval(() => showSlide(currentSlide + 1), 7000);
 
     </script>
 
+    <script src="script.js"></script>
 
 </body>
 
